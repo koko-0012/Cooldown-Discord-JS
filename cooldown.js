@@ -19,6 +19,14 @@ converted.s = seconds
 converted.ms = milliseconds
 */
 
+/*
+${converted.d}
+${converted.h}
+${converted.m}
+${converted.s}
+${converted.ms}
+*/
+
 
 //add command handler ->
 
@@ -28,8 +36,8 @@ message.delete(); //delete the message like
       
       const timeLeft = cooldown.get(message.author.id) - Date.now(); 
       const converted = convertMS(timeLeft); // Changes the ms to time
-      //add message here if 
-    
+      //add message here if code
+        
     } else {
     
     cooldown.set(message.author.id, Date.now() + time); // <- saves the time 
