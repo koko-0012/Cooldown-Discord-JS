@@ -20,12 +20,9 @@ converted.ms = milliseconds
 */
 
 
-module.exports = { 
-  config: {
-      name: "Command",
-  },
-run: (bot, message, args, connection) => {
-  message.delete(); //delete the message like 
+//add command handler ->
+
+message.delete(); //delete the message like 
     
     if (cooldown.has(message.author.id)) { // if user on cooldown
       
