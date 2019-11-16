@@ -42,7 +42,5 @@ message.delete(); //delete the message like
     
     cooldown.set(message.author.id, Date.now() + time); // <- saves the time 
     setTimeout(() => cooldown.delete(), time) // <- I don't remember what it does but it's needed
-    })
   }
-}
-}
+
